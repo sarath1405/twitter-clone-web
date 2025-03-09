@@ -1,4 +1,3 @@
-import React from "react";
 import "./logout.scss";
 import { useUser } from "../../../../contexts/user.context";
 import { useNavigate } from "react-router-dom";
