@@ -1,0 +1,52 @@
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: calc(100vh - 4rem);
+    position: sticky;
+    top: 0;
+    width: 200px;
+
+    .menu-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 14px;
+        color: var(--primary-color);
+        cursor: pointer;
+        padding: 0.8rem;
+        border-radius: 1.5rem;
+        transition: background 0.3s;
+
+        i {
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+            background: var(--hover-background-color);
+        }
+
+        &.active {
+            font-weight: bold;
+            background: var(--hover-background-color);
+        }
+    }
+
+    .tweet-btn {
+        background-color: var(--button-background-color);
+        color: var(--button-text-color);
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        text-align: center;
+        width: 100%;
+
+        &:hover {
+            background-color: var(--hover-background-color);
+        }
+    }
+}

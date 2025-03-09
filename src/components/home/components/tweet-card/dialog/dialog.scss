@@ -1,0 +1,75 @@
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(4px); 
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog-box {
+    background: rgb(29, 29, 29);
+    padding: 1rem;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    .dialog-header {
+        font-size: 18px;
+    }
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.option {
+    padding: 0.7rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+        background: var(--secondary-background-color);
+    }
+
+    &.selected {
+        background: var(--button-background-color);
+        color: var(--button-text-color);
+    }
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.4rem;
+    gap: 1rem;
+}
+
+.cancel-btn, .save-btn {
+    border: none;
+    padding: 0.4rem 1rem;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #242424;
+    color: #FFF;
+    border: .1px solid var(--border-color);
+}
+
+.save-btn {
+    background: var(--button-background-color);
+    color: var(--button-text-color);
+}

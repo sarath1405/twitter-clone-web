@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background: var(--secondary-background-color);
+    padding-left: 9.5rem;
+    height: 4rem;
+    
+    .title-container {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--primary-color);
+    }
+}
